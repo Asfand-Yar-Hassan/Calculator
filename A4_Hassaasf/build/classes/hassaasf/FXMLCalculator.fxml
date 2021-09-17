@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.image.*?>
+
+<VBox xmlns:fx="http://javafx.com/fxml/1" fx:controller="hassaasf.FXMLCalculatorController" prefWidth="300" prefHeight="200" >
+    <GridPane alignment="CENTER">
+        <children>
+            <Label text="Advanced Calculator" GridPane.rowIndex="0" GridPane.halignment="CENTER" GridPane.columnIndex="1" />
+            <Label text="X=" GridPane.columnIndex="0" GridPane.rowIndex="1" GridPane.halignment="CENTER" >    
+                <GridPane.margin>
+                    <Insets right="5.0" left="0.0" top="0.0" bottom="0.0" />
+                </GridPane.margin>
+            </Label>
+            
+            <TextField fx:id="ValX" GridPane.columnIndex="0" GridPane.rowIndex="2" GridPane.halignment="RIGHT" maxWidth="1000"  />
+            
+            <Label text="Y=" GridPane.columnIndex="3" GridPane.rowIndex="1" GridPane.halignment="CENTER">
+                <GridPane.margin>
+                    <Insets right="5.0" left="0.0" top="0.0" bottom="0.0" />
+                </GridPane.margin>
+            </Label>
+            <TextField fx:id="ValY" GridPane.columnIndex="3" GridPane.rowIndex="2" GridPane.halignment="LEFT" maxWidth="1000"  />
+            <Label fx:id="lblRes" text="Result: " GridPane.rowIndex="3"  GridPane.halignment="LEFT">
+                <GridPane.margin>
+                    <Insets right="0.0" left="0.0" top="15.0" bottom="15.0" />
+                </GridPane.margin>
+            </Label>
+            
+            <Button fx:id="btnA" text="X^Y" GridPane.rowIndex="5" GridPane.halignment="LEFT" maxWidth="95"      />
+            <Button fx:id="btnB" text="Max" GridPane.rowIndex="6" GridPane.halignment="LEFT" maxWidth="95"    />
+            <Button fx:id="btnC" text="Min" GridPane.rowIndex="7" GridPane.halignment="LEFT" maxWidth="95"   />
+            <Button fx:id="btnD" text="Even Or Odd" GridPane.rowIndex="8" GridPane.halignment="LEFT" maxWidth="95"  />
+        
+          <ImageView fx:id="picture" fitHeight="80" fitWidth="80" preserveRatio="TRUE" GridPane.rowIndex="6" GridPane.columnIndex="1" GridPane.halignment="CENTER"  >
+                <image>
+                    <Image url="@res/calculator-clipart-images-2.png"/>
+                </image>
+          </ImageView>
+            <Button fx:id="btnE" text="Clear X" GridPane.rowIndex="5"  GridPane.columnIndex="3" maxWidth="95" GridPane.halignment="RIGHT"  />
+            <Button fx:id="btnF" text="Clear Y" GridPane.rowIndex="6"      GridPane.columnIndex="3" maxWidth="95" GridPane.halignment="RIGHT" />
+            <Button fx:id="btnG" text="Clear X and Y" GridPane.rowIndex="7"      GridPane.columnIndex="3" maxWidth="95" GridPane.halignment="RIGHT" />
+            <Button fx:id="btnH" text="Exit" GridPane.rowIndex="8"     GridPane.columnIndex="3" maxWidth="95" GridPane.halignment="RIGHT"  />
+        </children>
+    </GridPane>
+</VBox>
